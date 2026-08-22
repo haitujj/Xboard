@@ -40,8 +40,8 @@ RUN composer install --no-cache --no-dev --no-security-blocking \
     && chown redis:redis /data
     
 ENV ENABLE_WEB=true \
-    ENABLE_HORIZON=true \
-    ENABLE_REDIS=true \
+    ENABLE_HORIZON=false \
+    ENABLE_REDIS=false \
     ENABLE_WS_SERVER=true \
     ENABLE_CADDY=true
 
